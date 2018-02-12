@@ -9,12 +9,10 @@ import static com.ee.common.constants.ProductConstants.DOVE_UNIT_PRICE;
 
 /**
  * Product Catalog Factory class which is responsible for creation of products
- *
  */
 public class ProductCatalog {
 
 	/**
-	 * 
 	 * A factory method to create the product based on its name from customer. 
 	 * @param productName
 	 * @return product Product
@@ -27,17 +25,13 @@ public class ProductCatalog {
 		case DOVE_NAME:
 			product = new Dove(productName, DOVE_UNIT_PRICE, DOVE_TAX_RATE);
 			break;
-
 		case AXE_NAME:
 			product = new AxeDeo(productName, AXE_UNIT_PRICE, AXE_TAX_RATE);
 			break;
-
 		default:
 			product = null;
 			break;
 		}
-
 		return product;
 	}
-
 }

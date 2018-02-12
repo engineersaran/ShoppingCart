@@ -15,8 +15,7 @@ public class ProductTotalCostUtil {
 	 * A utility method to calculate the total price amount of each products added in
 	 * shopping cart
 	 * 
-	 * @param shoppingCartBasket
-	 *            List<Product>
+	 * @param shoppingCartBasket List<Product>
 	 * @return Formatted totalProductPrice BigDecimal
 	 */
 	public static BigDecimal getTotalProductPrice(List<Product> shoppingCartBasket) {

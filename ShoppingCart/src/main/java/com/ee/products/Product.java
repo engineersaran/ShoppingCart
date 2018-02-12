@@ -3,7 +3,7 @@ package com.ee.products;
 import com.ee.common.util.ProductTaxAmountUtil;
 
 /**
- * An abstract class describing Product to be added in Shopping cart basket
+ * An abstract class describing Product to be added in Shopping cart
  */
 public abstract class Product {
 
@@ -21,7 +21,6 @@ public abstract class Product {
 	 * @return taxAmount double
 	 */
 	public double getTaxAmount(double unitPrice, double taxRate) {
-		
 		return ProductTaxAmountUtil.getTaxAmount(unitPrice, taxRate);
 	}
 }

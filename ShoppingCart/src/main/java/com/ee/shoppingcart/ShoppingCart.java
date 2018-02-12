@@ -21,7 +21,6 @@ public class ShoppingCart {
 	private BigDecimal totalShoppingCartTaxprice = null;
 
 	public ShoppingCart() {
-
 		shoppingCartBasket = new ArrayList<Product>();
 		totalShoppingCartPrice = new BigDecimal(0);
 		totalShoppingCartTaxprice = new BigDecimal(0);
@@ -29,9 +28,7 @@ public class ShoppingCart {
 
 	/**
 	 * Adds product to the Shopping cart.
-	 * 
-	 * @param product
-	 *            Products
+	 * @param product Products
 	 */
 	public void addToCart(Product product) {
 		shoppingCartBasket.add(product);
@@ -44,7 +41,6 @@ public class ShoppingCart {
 	 * totalShoppingCartPrice variable
 	 */
 	private void setTotalShoppingCartPrice() {
-
 		totalShoppingCartPrice = ProductTotalCostUtil.getTotalProductPrice(getShoppingCartBasket());
 	}
 
@@ -90,7 +86,6 @@ public class ShoppingCart {
 	 * @return Formatted total tax price BigDecimal
 	 */
 	public BigDecimal getTotalShoppingCartTaxprice() {
-
 		return totalShoppingCartTaxprice;
 	}
 }
